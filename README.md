@@ -43,7 +43,22 @@ Now that you have the repository cloned to your local machine, you'll be able to
 
 ## Before Every Subsequent Lecture
 
-1. Run `git stash` on your local machine to store any changes you made in your local copy of the repository during the previous lecture. 
-2. Click on the Fetch & Merge button on your fork of the repository on GitHub.
-3. Run `git pull` from within the attached terminal of your local copy of the repository in VS Code. 
+1. Click on the Fetch & Merge button on your fork of the repository on GitHub.
+2. Run `git pull` from within the attached terminal of your local copy of the repository in VS Code. 
 
+## Merge Conflicts
+
+If all goes well, you should not encounter merge conflicts when you follow this workflow as part of participation in lecture. There is one scenario where they might come up, so I want to describe it here and how to address it.
+
+### Scenario
+
+Say these events happen in this order:
+
+1. Your lecturer sends out a message in Slack notifying the class that starter code is ready to fetch and merge before lecture. 
+2. You go through the steps above and pull down the updated code to your machine. 
+3. You start taking some notes there and attempting to solve problems in the starter code.
+4. The lecturer notices something in the lecture code that they want to change and pushes another commit to the lecture repo.
+
+In this case, going through the `fetch & merge` and `git pull` workflow may result in what's called a merge conflict. The safest thing to do in this situation is to run `git stash` locally to hide your changes in your local repository so that the `pull` from GitHub goes off without a hitch. You can still view the code within your stash within VSCode and you can even return it to your machine with `git stash pop` if you like.
+
+If this scenario arises, your lecturer will generally communicate the change in advance, so this scenario should be rare. But, should it happen, this is one approach you can take to get around any potential problems.
