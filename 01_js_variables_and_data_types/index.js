@@ -77,43 +77,43 @@
 
     // if...else
 
-        // const duration = 216;
+        const duration = 216;
 
-        // if (duration < 180) {
-        //     console.log("This song is short!");
-        // } else {
-        //     console.log("This song isn't short.");
-        // }
+        if (duration < 180) {
+            console.log("This song is short!");
+        } else {
+            console.log("This song isn't short.");
+        }
 
     // if...else if...else
 
-        // const duration = 216;
+        const duration = 216;
 
-        // if (duration > 240) {
-        //     console.log("This song is long!");
-        // } else if (duration < 180) {
-        //     console.log("This song is short!");
-        // } else {
-        //     console.log("This song is a normal length.");
-        // }
+        if (duration > 240) {
+            console.log("This song is long!");
+        } else if (duration < 180) {
+            console.log("This song is short!");
+        } else {
+            console.log("This song is a normal length.");
+        }
         
         
     // (Date Comparisons)
     
-        // let sweetDreamsLastPlayedAt = new Date("2021-12-12 10:30 AM")
-        // let cryMeARiverLastPlayedAt = new Date("2021-12-12 11:30 AM")
-        // console.log(sweetDreamsLastPlayedAt <= cryMeARiverLastPlayedAt)
+        let sweetDreamsLastPlayedAt = new Date("2021-12-12 10:30 AM")
+        let cryMeARiverLastPlayedAt = new Date("2021-12-12 11:30 AM")
+        console.log(sweetDreamsLastPlayedAt <= cryMeARiverLastPlayedAt)
 
-    // ternary operator
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+    ternary operator
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 
-        // let favorite = true;
+        let favorite = true;
 
-        // { favorite ? console.log("This song is my favorite!") : console.log("This song is not my favorite!") }
+        { favorite ? console.log("This song is my favorite!") : console.log("This song is not my favorite!") }
 
-        // // or 
+        // or 
 
-        // console.log(`This song ${favorite ? 'is' : 'is not'} my favorite!`)
+        console.log(`This song ${favorite ? 'is' : 'is not'} my favorite!`)
 
 console.log("------------------------");
 console.log("⬇️ Activities ⬇️");
@@ -127,7 +127,7 @@ console.log("------------------------");
 // 🚧 Activity 1: Using if...else
 
     // 🚧 "time" will be a random number between 0 and 24
-    // const time = Math.ceil(Math.random()*24);
+    // const time = Math.ceil(Math.random()*24); // gets number between 0 and 24 and rounds it down 
     // log a message to the console indicating whether "time" is in the AM or PM
     // uncomment the code between the 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 and
     // fill in the ❓ with the proper expression.
@@ -138,13 +138,26 @@ console.log("------------------------");
     // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
     // if (❓) {
 
-        // console.log(`${time} is in the AM.`)
+        console.log(`${time} is in the AM.`)
 
-    // In all other cases...
-    // } else {
+    In all other cases...
+    } else {
 
-        // console.log(`${time} is in the PM.`)
+        console.log(`${time} is in the PM.`)
+///
 
+
+        if (time < 12) {
+
+            console.log(`${time} is in the AM.`)
+   
+       // In all other cases...
+        } else {
+   
+            console.log(`${time} is in the PM.`)
+   
+        }
+   
     // }
     // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
 
